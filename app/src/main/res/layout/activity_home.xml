@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Top bar-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor"
+        android:paddingHorizontal="11dp"
+        android:paddingTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/appendix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_youspotlight"
+            android:text="여성을 위한, 여성에 의한 모든 공간"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="131dp"
+            android:fontFamily="@font/font_youspotlight"
+            android:text="엑스엑스"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/logo"
+            app:layout_constraintTop_toBottomOf="@+id/appendix" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="42dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="112dp"
+            android:src="@drawable/image_main_brand"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appendix" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--search-->
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/searchstyle"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+        <TextView
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/font_youspotlight"
+            android:text="             어떤 편의시설을 찾고 계신가요?"
+            android:padding="8dp"
+            android:textColor="#AB000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!--hospital-->
+
+    <!--Leisure-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_Hospital"
+        android:layout_width="165dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rectangle"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+
+        app:layout_constraintBottom_toTopOf="@+id/layout_mypage"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:fontFamily="@font/font_youspotlight"
+            android:text="병원"
+            android:textColor="#AB000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_Hospital"
+            app:layout_constraintStart_toStartOf="@+id/layout_Hospital"
+            app:layout_constraintTop_toBottomOf="@+id/img_hospital"
+            tools:layout_editor_absoluteY="148dp" />
+
+        <ImageView
+            android:id="@+id/img_hospital"
+            android:layout_width="95dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/homeicon_hospital" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--public facilities-->
+
+    <!--home-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_Leisure"
+        android:layout_width="165dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rectangle"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchLayout">
+
+        <TextView
+            android:id="@+id/tv_leisure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:clickable="false"
+            android:fontFamily="@font/font_youspotlight"
+            android:text="여가시설"
+            android:textColor="#AB000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_Leisure"
+            app:layout_constraintStart_toStartOf="@+id/layout_Leisure"
+            app:layout_constraintTop_toBottomOf="@+id/img_leisure" />
+
+        <ImageView
+            android:id="@+id/img_leisure"
+            android:layout_width="95dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/homeicon_exercise" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_help"
+        android:layout_width="165dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/rectangle"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchLayout">
+
+        <TextView
+            android:id="@+id/tv_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:clickable="false"
+            android:fontFamily="@font/font_youspotlight"
+            android:text="도와도"
+            android:textColor="#AB000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_help" />
+
+        <ImageView
+            android:id="@+id/img_help"
+            android:layout_width="95dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/homeicon_help" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_home"
+        android:layout_width="165dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rectangle"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/layout_mypage"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:clickable="false"
+            android:fontFamily="@font/font_youspotlight"
+            android:text="주거시설"
+            android:textColor="#AB000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_home"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_home" />
+
+        <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="95dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/homeicon_house" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_mypage"
+        android:layout_width="370dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/searchstyle"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_mypage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="false"
+            android:fontFamily="@font/font_youspotlight"
+            android:text="마이페이지 및 설정"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#AB000000" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_mypage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_user" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

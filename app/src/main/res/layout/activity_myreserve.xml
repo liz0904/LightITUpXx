@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.member.MypageReserveActivity">
+
+    <!--Top bar-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor"
+        android:paddingHorizontal="11dp"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/appendix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/font_youspotlight"
+            android:text="여성을 위한, 여성에 의한 모든 공간"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/appName"
+            app:layout_constraintStart_toEndOf="@+id/img_helpBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="42dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="65dp"
+            android:src="@drawable/image_main_brand"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appendix" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="개인정보 처리방침"
+            android:fontFamily="@font/font_youspotlight"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toEndOf="@+id/logo"
+            app:layout_constraintTop_toBottomOf="@+id/appendix" />
+
+        <ImageView
+            android:id="@+id/img_helpBack"
+            android:layout_width="52dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.274"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/font_youspotlight"
+        android:layout_marginTop="89dp"
+        android:textColor="#AB000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar"
+        android:text="   1. 개인정보의 처리 목적\n   XX 은(는) 다음의 목적을 위하여 개인정보를 처리하고 있으며,다음의 목적 이외의 용도로는 이용하지 않습니다.\n
+- 고객 가입의사 확인, 고객에 대한 서비스 제공에 따른 본신 식별 및 인증, 회원자격 유지 및 관리, 물품이나 서비스 공급에 따른 금액 결제, 물품 또는 서비스의 공급 및 배송 등
+\n\n   2. 개인정보의 처리 및 보유 기간\n   1) XX 는 정보 주체로 부터 개인정보를 수집할 때 동의 받은 개인정보 보유 이용기간 또는 법령에 따른 개인정보 보유, 이용기간 내에서 개인정보를 처리 및 보유 합니다.
+\n   2) 구체적인 개인정보 보유 기간은 다음과 같습니다.\n   - 고객가입 및 관리 : 서비스 이용 계약 또는 회원가입 해지시 까지
+\n\n   3. 개인정보의 제3자 제공에 관한 사항\n   1) XX 정보주체의 동의, 법률의 특별한 규정등 개인정보 보호법 제 17조 및 18조에 해당하는 경우에만 개인정보를 제 3자에게 제공합니다.
+\n   2) XX 는 다음과 같이 개인정보를 제 3자에게 제공하고 있습니다.
+\n   - 개인정보를 제공받는 자 : 구글 (Google)
+\n   - 제공받는 자의 개인정보 이용목적 : 다운받은 앱 사용시 수명주기와 발생 이벤트 등의 분석 및 통계용 (구글 애널리틱스), 정보주체별 맞춤광고 제공용(구글 애드몹)
+\n   - 제공받는 자의 보유, 이용기간 : 앱 설치시 부터 제품별 구글이 정한 기간에 따름
+\n   - 제공받는 자의 제품별 개인정보처리방침 : 구글 개인정보 처리방침에 따름 (https://policies.google.com/privacy?hl=ko)
+
+\n\n   4. 개인정보처리 위탁
+
+\n   ① XX 는 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리업무를 위탁하고 있습니다.
+
+1. (위탁없음)
+- 위탁받는 자 (수탁자) : 없음.
+- 위탁하는 업무의 내용 : 없음.
+- 위탁기간 : 없음.
+
+\n   ② XX 은(는) 위탁계약 체결시 개인정보 보호법 제25조에 따라 위탁업무 수행목적 외 개인정보 처리금지, 기술적․관리적 보호조치, 재위탁 제한, 수탁자에 대한 관리․감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에 명시하고, 수탁자가 개인정보를 안전하게 처리하는지를 감독하고 있습니다.
+
+
+\n   ③ 위탁업무의 내용이나 수탁자가 변경될 경우에는 지체없이 본 개인정보 처리방침을 통하여 공개하도록 하겠습니다.
+
+\n\n   5. 정보주체와 법정대리인의 권리·의무 및 그 행사방법 이용자는 개인정보주체로써 다음과 같은 권리를 행사할 수 있습니다.
+
+① 정보주체는 XX 에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.
+1. 개인정보 열람요구
+2. 오류 등이 있을 경우 정정 요구
+3. 삭제요구
+4. 처리정지 요구"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

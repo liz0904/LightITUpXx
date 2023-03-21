@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/back_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_baseline_arrow_back_ios_24" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/middlebox"
+                    android:layout_width="match_parent"
+                    android:layout_height="256dp"
+                    android:layout_marginTop="240dp"
+                    android:background="@color/category">
+
+                    <LinearLayout
+                        android:id="@+id/btn_sale_leisure"
+                        android:layout_width="92dp"
+                        android:elevation="6dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginBottom="18dp"
+                        android:background="@drawable/button_background"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_youspotlight"
+                            android:text="할인쿠폰"
+                            android:textColor="#AB000000" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/scrapleisureBtn"
+                        android:layout_width="92dp"
+                        android:layout_height="61dp"
+                        android:layout_marginBottom="17dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/button_background"
+                        android:elevation="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/btn_sale_leisure">
+
+                        <ImageView
+                            android:id="@+id/scrapHeart"
+                            android:layout_width="80dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/img_emptyheart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/font_youspotlight"
+                            android:text="스크랩"
+                            android:textColor="#AB000000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mapleisureBtn"
+                        android:layout_width="92dp"
+                        android:layout_height="61dp"
+                        android:layout_marginBottom="17dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/button_background"
+                        android:elevation="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/scrapleisureBtn">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/font_youspotlight"
+                            android:text="지도보기"
+                            android:textColor="#AB000000" />
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/img_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ptdetail" />
+
+                <LinearLayout
+                    android:id="@+id/leisure_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="200dp"
+                    android:elevation="10dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/background_hospital"
+                    android:gravity="center"
+                    android:padding="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_youspotlight"
+                        android:text="[ 커브스 공릉과기대클럽 ]"
+                        android:textColor="#AB000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_youspotlight"
+                        android:text="헬스"
+                        android:paddingBottom="16dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_youspotlight"
+                        android:text="서울 노원구 석계로15길 25"
+                        android:textColor="#AB000000"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_youspotlight"
+                        android:text="평일 09:00~19:00"
+                        android:textColor="#AB000000"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:drawableLeft="@drawable/call"
+                android:maxLines="2"
+                android:fontFamily="@font/font_youspotlight"
+                android:gravity="center_vertical"
+                android:text=" 02-938-5557"
+                android:textColor="#AB000000"
+                android:textSize="16sp" />
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:elevation="2dp"
+                android:background="#1E000000"/>
+
+            <TextView
+                android:id="@+id/tv_ping"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:drawableLeft="@drawable/address1"
+                android:fontFamily="@font/font_youspotlight"
+                android:gravity="center_vertical"
+                android:text="서울 노원구 상계동 727 덕영빌딩 7층"
+                android:maxLines="2"
+                android:textColor="#AB000000"
+                android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:elevation="2dp"
+                    android:background="#1E000000"/>
+
+            <TextView
+                android:id="@+id/tv_way"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:drawableLeft="@drawable/location"
+                android:maxLines="2"
+                android:fontFamily="@font/font_youspotlight"
+                android:text="노원역 5번 출구에서 순복음교회 쪽으로 올라오시면 우리은행 건물 7층에 위치하고 있습니다."
+                android:textColor="#AB000000"
+                android:gravity="center_vertical"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_below="@id/loaction"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:elevation="2dp"
+                android:background="#1E000000"/>
+            <TextView
+                android:id="@+id/tv_cost"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:drawableLeft="@drawable/parking"
+                android:fontFamily="@font/font_youspotlight"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:text="1인실 A 420,000원"
+                android:textColor="#AB000000"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/line10"
+                android:layout_below="@id/loaction"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:elevation="2dp"
+                android:background="#1E000000"/>
+
+            <TextView
+                android:id="@+id/tv_option"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:drawableLeft="@drawable/parking"
+                android:fontFamily="@font/font_youspotlight"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:text="주차, 예약, 무선 인터넷, 남/녀 화장실 구분"
+                android:textColor="#AB000000"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:elevation="2dp"
+                android:background="#1E000000"/>
+
+            <TextView
+                android:drawableLeft="@drawable/time"
+                android:id="@+id/tv_realtime"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:maxLines="2"
+                android:fontFamily="@font/font_youspotlight"
+                android:gravity="center_vertical"
+                android:text="토요일 09:00~12:00 / 일요일 휴무"
+                android:textColor="#AB000000"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/line5"
+                android:layout_below="@id/time"
+                android:layout_width="match_parent"
+                android:elevation="2dp"
+                android:layout_height="1dp"
+                android:background="#1E000000"/>
+
+            <TextView
+                android:drawableLeft="@drawable/tag1"
+                android:id="@+id/tv_hashtag"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:maxLines="2"
+                android:fontFamily="@font/font_youspotlight"
+                android:text="#가족분만 #요실금 #부인과성형 #소아과"
+                android:textColor="#AB000000"
+                android:gravity="center_vertical"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/line6"
+                android:layout_width="match_parent"
+                android:elevation="2dp"
+                android:layout_height="1dp"
+                android:background="#1E000000"/>
+
+            <TextView
+                android:drawableLeft="@drawable/treatment"
+                android:id="@+id/tv_comment"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:fontFamily="@font/font_youspotlight"
+                android:maxLines="2"
+                android:paddingLeft="8dp"
+                android:text="여성만을 위한 30분 순환운동! 커브스!"
+                android:textColor="#AB000000"
+                android:gravity="center_vertical"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
